@@ -264,6 +264,29 @@ const config: HardhatUserConfig = {
       tags: ["staging"],
       gasMultiplier: 2,
     },
+    aurora: {
+      url: "https://mainnet.aurora.dev",
+      accounts,
+      chainId: 1313161554,
+      live: true,
+      saveDeployments: true,
+      blockGasLimit: 700000,
+    },
+    // "aurora-fork": {
+    //   url: "https://kovan3.arbitrum.io/rpc",
+    //   accounts,
+    //   chainId: 1313161554,
+    //   live: true,
+    //   saveDeployments: false,
+    //   tags: ["staging"],
+    //   gasMultiplier: 2,
+    // },
+    // "aurora-fork": {
+    //   forking: {
+    //     url: "https://kovan3.arbitrum.io/rpc",
+    //     // blockNumber: 11095000
+    //   }
+    // }
   },
   paths: {
     artifacts: "artifacts",
