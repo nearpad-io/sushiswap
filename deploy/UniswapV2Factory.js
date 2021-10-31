@@ -13,7 +13,7 @@ module.exports = async function ({
   const { deploy } = deployments;
 
   const { deployer, dev } = await getNamedAccounts();
-  console.log("deployer", deployer);
+
   await deploy("UniswapV2Factory", {
     contract: {
       abi,
