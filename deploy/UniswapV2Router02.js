@@ -1,4 +1,4 @@
-const { WETH } = require("@sushiswap/sdk");
+// const { WETH } = require("@sushiswap/sdk");
 
 module.exports = async function ({ getNamedAccounts, deployments }) {
   const { deploy } = deployments;
@@ -11,8 +11,10 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
   if (chainId === "31337") {
     wethAddress = (await deployments.get("WETH9Mock")).address;
-  } else if (chainId in WETH) {
-    wethAddress = WETH[chainId].address;
+  } if (chainId === "1313161554") {
+      wethAddress = "0x0b20972b45ffb8e5d4d37af4024e1bf0b03f15ae";  
+  // } else if (chainId in WETH) {
+  //   wethAddress = WETH[chainId].address;
   } else {
     throw Error("No WETH!");
   }
