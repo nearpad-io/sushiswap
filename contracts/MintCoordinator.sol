@@ -1,9 +1,5 @@
 // SPDX-License-Identifier: MIT
 
-/**
- * Copyright 2017-2021, bZxDao. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0.
- */
 
 pragma solidity 0.6.12;
 
