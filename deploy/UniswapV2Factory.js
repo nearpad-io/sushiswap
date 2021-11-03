@@ -20,7 +20,7 @@ module.exports = async function ({
       bytecode,
     },
     from: deployer,
-    args: [dev],
+    args: [deployer],
     log: true,
     deterministicDeployment: false,
   });
